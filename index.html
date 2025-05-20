@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="cover">
+            <img id="cover-img" src="assets/images/cover1.jpg" alt="Album Cover">
+        </div>
+        
+        <div class="song-info">
+            <h2 id="song-title">Song Name</h2>
+            <p id="artist">Artist</p>
+        </div>
+
+        <div class="progress-container">
+            <input type="range" id="progress-bar" min="0" max="100" value="0">
+            <div class="time">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn"><i class="fas fa-backward"></i></button>
+            <button id="play-btn"><i class="fas fa-play" id="play-icon"></i></button>
+            <button id="next-btn"><i class="fas fa-forward"></i></button>
+        </div>
+
+        <div class="volume-control">
+            <i class="fas fa-volume-up"></i>
+            <input type="range" id="volume-bar" min="0" max="100" value="50">
+        </div>
+
+        <div class="playlist">
+            <ul id="playlist-songs">
+                <!-- Songs will be added via JavaScript -->
+            </ul>
+        </div>
+        <br> <hr> <br>
+        <div class="attribution">{ By : Yunus K. }</div>
+    </div>
+
+    <audio id="audio"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
