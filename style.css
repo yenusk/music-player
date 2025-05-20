@@ -113,7 +113,7 @@ body {
     border-radius: 50%;
 }
 .playlist {
-    max-height: 150px;
+    max-height: 100px;
     overflow-y: auto;
 }
 .playlist ul {
